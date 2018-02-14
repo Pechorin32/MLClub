@@ -47,10 +47,6 @@ with open('test_csv.csv', newline='') as csvfile: #opens the csv file
                 return np.exp(alst) / np.sum(np.exp(alst), axis=0) # Compute softmax values for each sets of scores in the list.
             print(softmax(alst))
 
-            # if a > '0.5':
-            #     print("You have matched {} with {}".format(i, newWord))
-
-        # print(alst)
         print()
         print('*' * 40)
         print()
