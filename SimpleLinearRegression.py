@@ -38,3 +38,6 @@ plt.axis('tight')
 plt.xlabel('True Price ($1000s)')
 plt.ylabel('Predicted Price ($1000s)')
 plt.tight_layout()
+
+import numpy as np
+print("RMS: %r " % np.sqrt(np.mean((predicted - expected) ** 2)))
